@@ -1,7 +1,4 @@
-class Auto:
-    def __init__(self, nev, gyartasi_datum):
-        self.nev = nev
-        self.gyartasi_datum = int(gyartasi_datum)
+from Auto import Auto
 
 
 
@@ -24,7 +21,7 @@ def kor(auto):
     print(f"{auto.nev}-{2025-auto.gyartasi_datum}")
 
 def kiir(auto):
-    with open("ki.txt", "w", encoding="UTF-8")as file:
+    with open("ki.txt", "a", encoding="UTF-8")as file:
         file.write(auto.nev)
         file.write(str(2025-auto.gyartasi_datum)+"\n")
         

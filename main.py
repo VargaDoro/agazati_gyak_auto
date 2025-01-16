@@ -10,12 +10,12 @@ for i in range(50):
 oszthato.hettelOszthato(szamok)
 auto_lista=autom.beolvas()
 
-for i in range(0, len(auto_lista)):
+'''for i in range(0, len(auto_lista)):
     print("*******")
     print(auto_lista[i].nev)
     print(auto_lista[i].gyartasi_datum)
-    print()
+    print()'''
 
 autom.kor(auto_lista[0])
-autom.kiir(auto_lista[i])
+autom.kiir(auto_lista[1])
 autom.flotta(auto_lista)
